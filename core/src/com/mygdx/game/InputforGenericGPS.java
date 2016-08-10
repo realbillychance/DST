@@ -89,15 +89,14 @@ public class InputforGenericGPS implements Screen {
 		home= new Button("Home Button.PNG");
 		home.setPosition(0, 700);
 		question=new Button("Question Icon.png");
-		question.setPosition(65, 709);
+		question.setPosition(10, 109);
 		box= new Texture("AboutGPS.fw.png");
 		labels=new Image(box);
-		labels.setPosition(120, 510);
+		labels.setPosition(120, 0);
 		labels.setVisible(false);
 		status=false;
 		stage= new Stage();
 		stage.addActor(initlongitude);
-		stage.addActor(labels);
 		stage.addActor(initlatitude);
 		stage.addActor(velocity);
 		stage.addActor(center);
@@ -108,6 +107,7 @@ public class InputforGenericGPS implements Screen {
 		stage.addActor(maxt);
 		stage.addActor(home);
 		stage.addActor(question);
+		stage.addActor(labels);
 		Gdx.input.setInputProcessor(stage);
 	}
 	@Override

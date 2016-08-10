@@ -98,10 +98,10 @@ public class GPSOptions implements Screen {
 		home= new Button("Home Button.PNG");
 		home.setPosition(0, 700);
 		question=new Button("Question Icon.png");
-		question.setPosition(65, 709);
+		question.setPosition(10, 109);
 		box= new Texture("AboutTri.fw.png");
 		labels=new Image(box);
-		labels.setPosition(120, 510);
+		labels.setPosition(120, 0);
 		labels.setVisible(false);
 		status=false;
 		stage= new Stage();
